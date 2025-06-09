@@ -1,6 +1,9 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 import pandas as pd
 import numpy as np
+
+
 
 # --- Miary podobieństwa ---
 def euclidean_distance(x, y):
@@ -80,7 +83,7 @@ def load_data():
 
 data = load_data()
 
-st.set_page_config(layout="wide")
+
 
 # --- Streamlit UI ---
 st.title("🎬 System rekomendacji filmów")
